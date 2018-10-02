@@ -1,0 +1,10 @@
+<div *ngIf="customer">
+  <h2>{{customer.companyName | uppercase}}</h2>
+  <div><span>id:</span>{{customer.id}}</div>
+
+  <div>
+    <label>company:
+      <input [(ngModel)]="customer.companyName" placeholder="company">
+    </label>
+  </div>
+</div>
